@@ -1,3 +1,5 @@
+console.log('JavaScript Array Functions:');
+
 console.log('---------------------------- Ejercicio 1 ----------------------------');
 
 var nombres = ['Gonzalo', 'Emiliana', 'Maximiliano', 'Tomas', 'Jose', 'Francisco', 'Juan', 'Martin', 'Ignacio'];
@@ -112,12 +114,15 @@ console.log('---------------------------- Ejercicio 7 --------------------------
 myColor = ["Red", "Green", "White", "Black"];
 
 function arrayToString(array) {
-  var text = [];
-  for (var i = 0; i < array.length; i++) {
-    text.concat(array[i]);
+  var text = array[0];
+  for (var i = 1; i < array.length; i++) {
+    text = text + ', ' + array[i]
   }
-  return text.toString;
+  return text;
 }
 
 var texto = arrayToString(myColor);
 console.log(texto);
+
+console.log('------------------------------ The End ------------------------------');
+console.log('')
